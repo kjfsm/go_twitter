@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{.Title}}</title>
+  </head>
+  <body>
+    <div>
+      <table>
+        <tr>
+          <th>id</th>
+          <th>name</th>
+          <th>email</th>
+        </tr>
+        {{range .Items}}
+        <tr>
+          <td>{{.Id}}</td>
+          <td>{{.Name}}</td>
+          <td>{{.Email}}</td>
+        </tr>
+        {{end}}
+      </table>
+    </div>
+  </body>
+</html>
